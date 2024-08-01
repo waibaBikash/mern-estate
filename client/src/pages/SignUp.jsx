@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function SignUp() {
   const [formData, setFromData] = useState({});
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
   const handleChange = (e) => {
     setFromData(
       {
@@ -26,6 +27,7 @@ export default function SignUp() {
         body: JSON.stringify(formData),
       });
       const data = await res.json();
+      console.log(data);
       if(data.success === false){
         setLoading(false);
         setError(data.message);
@@ -33,7 +35,7 @@ export default function SignUp() {
       }
       setLoading(false);
       setError(null);
-      Navigate('/sign-in')
+      navigate('/sign-in')
     } catch (error) {
       setLoading(false);
       setError(error.message);
