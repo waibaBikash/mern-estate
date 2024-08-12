@@ -5,7 +5,7 @@ export default function Profile() {
   return (
       <div>
         <h1 className='text-3xl font-semibold text-center my-7'>Profile</h1>
-        <form>
+        <form className='flex flex-col'>
            <img src={currentUser.avatar} alt="profile" className='rounded-full' />
         </form>
       </div>
