@@ -114,7 +114,9 @@ export default function Profile() {
             <span 
             className='text-red-700 cursor-pointer'>Delete Account
             </span>
-            <span className='text-red-700 cursor-pointer'>Sign Out</span>
+            <span 
+            className='text-red-700 cursor-pointer'>Sign Out
+            </span>
          </div>
       </div>
   )
