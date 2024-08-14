@@ -99,7 +99,12 @@ export default function Profile() {
            className='border p-3 rounded-lg'
             id='email'
              />
-           <input type="text" placeholder='password' className='border p-3 rounded-lg' id='password' />
+           <input 
+           type="text"
+            placeholder='password' 
+            className='border p-3 rounded-lg' 
+            id='password' 
+            />
            <button className='bg-slate-700 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80'>update</button>
         </form>  
          <div className='flex justify-between mt-5'>
