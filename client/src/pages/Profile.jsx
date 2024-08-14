@@ -34,9 +34,11 @@ export default function Profile() {
      const storageRef = ref(storage,fileName);
      const uploadTask = uploadBytesResumable(storageRef, file);
 
-     uploadTask.on('state_changed',
+     uploadTask.on(
+      'state_changed',
    (snapshot) => {
-      const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+      const progress = 
+      (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
       setFilePerc(Math.round(progress));
    },
 (error) => {
@@ -54,7 +56,13 @@ export default function Profile() {
       <div className='p-3 max-w-lg mx-auto '>
         <h1 className='text-3xl font-semibold text-center my-7'>Profile</h1>
         <form className='flex flex-col gap-4'>
-         <input onChange={(e)=>setFile(e.target.files[0])} type="file" ref={fileRef} hidden accept='immage/*' />
+         <input 
+         onChange={(e)=>setFile(e.target.files[0])} 
+         type="file"
+         ref={fileRef}
+          hidden 
+          accept='immage/*' 
+          />
            <img onClick={()=>fileRef.current.click()} src={FormData.avatar || currentUser.avatar} alt="profile" className='rounded-full h-24 w-24 object-cover cursor-pointer self-center mt-2' />
            <p className='text-sm self-center'>
              {fileUploadError ? (
