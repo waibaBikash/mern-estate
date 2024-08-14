@@ -76,7 +76,8 @@ export default function Profile() {
                </span>
                 ) : filePerc > 0 && filePerc < 100 ? (
                   <span className='text-slate-700'>
-                   {`Uploading ${filePerc}%`}</span>
+                   {`Uploading ${filePerc}%`}
+                   </span>
                     ) : filePerc === 100 ? (
                      <span className='text-green-700'>
                       Image succesfully uploaded!
