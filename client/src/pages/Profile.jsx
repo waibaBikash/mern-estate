@@ -89,7 +89,7 @@ export default function Profile() {
                       Image succesfully uploaded!
                      </span>
                   ) : (
-                     ""
+                    ''
                   )}
            </p>
            <input 
