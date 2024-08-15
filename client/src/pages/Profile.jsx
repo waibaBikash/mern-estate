@@ -53,7 +53,7 @@ export default function Profile() {
    setFormData({...FormData, avatar: downloadURL})
    );
   }
-);
+ );
 };
 
   return (
