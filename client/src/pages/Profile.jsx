@@ -16,6 +16,10 @@ export default function Profile() {
    const [filePerc, setFilePerc] = useState(0);
    const [fileUploadError, setFileUploadError] = useState(false);
    const [FormData, setFormData] = useState({});
+   console.log(FormData);
+   console.log(filePerc);
+   console.log(fileUploadError);
+   
    
    // firebase storage
    // allow read;
@@ -23,7 +27,7 @@ export default function Profile() {
    //    request.resource.size < 2 * 1024 * 1024 &&
    //    request.resource.contentType.matches('image/.*')
    useEffect(()=>{
-      if(file){
+      if(file) {
          handleFileUpload(file);
       }
    }, [file]);
