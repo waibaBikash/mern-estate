@@ -124,5 +124,5 @@ export default function Profile() {
             </span>
          </div>
       </div>
-  )
+  );
 }
