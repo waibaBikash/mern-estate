@@ -53,8 +53,8 @@ export default function Profile() {
    setFormData({...formData, avatar: downloadURL})
      );
     }
-  );
-};
+   );
+  };
 
   return (
       <div className='p-3 max-w-lg mx-auto '>
