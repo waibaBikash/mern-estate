@@ -26,7 +26,7 @@ export default function Profile() {
    //    allow write: if
    //    request.resource.size < 2 * 1024 * 1024 &&
    //    request.resource.contentType.matches('image/.*')
-   useEffect(()=>{
+   useEffect(() => {
       if(file) {
          handleFileUpload(file);
       }
