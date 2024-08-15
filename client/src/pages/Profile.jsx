@@ -52,7 +52,7 @@ export default function Profile() {
    getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => 
    setFormData({...formData, avatar: downloadURL})
      );
-  }
+    }
  );
 };
 
