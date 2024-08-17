@@ -39,7 +39,6 @@ export default function Header() {
              </li>
              }
              </Link>
-
            </ul>
          </div>
     </header>
