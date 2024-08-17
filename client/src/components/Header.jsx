@@ -12,7 +12,9 @@ export default function Header() {
          <span 
          className='text-slate-500'>Bikash
          </span>
-         <span className='text-slate-700'>Estate</span>
+         <span 
+         className='text-slate-700'>Estate
+         </span>
        </h1>
        </Link>
          <form 
