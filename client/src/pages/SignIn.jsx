@@ -52,9 +52,10 @@ export default function SignIn() {
             />
 
            <input 
-           type="password" placeholder='password' 
-           className='border p-3 rounded-lg' id='password' 
-           onChange={handleChange}
+            type="password" placeholder='password' 
+            className='border p-3 rounded-lg' 
+            id='password' 
+            onChange={handleChange}
             />
             
            <button 
